@@ -1,0 +1,15 @@
+{
+  "Statement": [
+    {
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::vpcendpointbucket872983471892374/*",
+      "Principal": {
+        "AWS": "*"
+      }
+    }
+  ]
+}
