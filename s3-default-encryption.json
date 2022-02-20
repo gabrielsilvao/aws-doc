@@ -13,6 +13,18 @@
                     "s3:x-amz-server-side-encryption": "AES256"
                 }
             }
+        },
+        {
+            "Sid": "DenyUnEncryptedObjectUploads",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:PubObject",
+            "Resource": "arn:aws:s3::::<bucket_name>/*",
+            "Condition": {
+                "Null": {
+                    "s3:x-amz-server-side-encryption": true
+                }
+            }
         }
     ]
 }
