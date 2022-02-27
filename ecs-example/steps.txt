@@ -1,0 +1,11 @@
+# build a docker image
+docker build -t demo .
+
+# login on ECR (change for your region)
+$(aws ecr get-login --no-include-email --region us-east-1)
+
+# tag image (change aws account number)
+docker tag demo:latest ...
+
+# push image
+docker push ...
