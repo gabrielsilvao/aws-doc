@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Principal": {"AWS":"*"},
+        "Action": ["sqs:SendMessage"],
+        "Resource": "arn:aws:sqs:us-east-1:444455556666:queue1",
+        "Condition": {
+            "ArnLike": {"aws:SourceArn": "arn:aws:s3:*:*:bucket1"},
+            "StringEquals": {"aws:SourceAccount": "<bucket1_owner_account_id>"},
+        }
+    }]
+}
