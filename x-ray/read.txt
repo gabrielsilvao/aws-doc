@@ -1,0 +1,22 @@
+# The X-Ray SDK for Python is a library for web applications, including Django, that provides classes and methods for generating and sending trace data to the X-Ray daemon.
+
+# Download the SDK with pip.
+# pip install aws-xray-sdk
+
+# Add the Django middleware to instrument incoming HTTP requests.
+"""
+MIDDLEWARE = [
+    'aws_xray_sdk.ext.django.middleware.XRayMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
+]
+"""
+
+#!/bin/bash
+curl https://s3.dualstack.us-east-1.amazonaws.com/aws-xray-assets.us-east-1/xray-daemon/aws-xray-daemon-3.x.rpm -o /home/ec2-user/xray.rpm
+yum install -y /home/ec2-user/xray.rpm
