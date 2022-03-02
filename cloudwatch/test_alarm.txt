@@ -1,2 +1,2 @@
 # To test alarms and notifications, set the alarm state to Alarm using CLI
-aws cloudwatch set-alarm-state --alarm-name "myalarm" --state-value ALARM --state-reason "testing purpose"
+aws cloudwatch set-alarm-state --alarm-name myalarm --state-value ALARM --state-reason "testing purpose"
