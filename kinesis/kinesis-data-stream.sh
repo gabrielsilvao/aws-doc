@@ -15,3 +15,5 @@ aws kinesis describe-stream --stream-name test
 aws kinesis get-shard-iterator --stream-name test --shard-id shardId-000000000000 --shard-iterator-type TRIM_HORIZON
 
 aws kinesis get-records --shard-iterator <>
+
+# use a base64 decoder to view the data
