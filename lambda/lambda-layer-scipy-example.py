@@ -1,4 +1,4 @@
-import numpy as numpy
+import numpy as np
 from scipy.spatial import ConvexHull
 
 def lambda_handler(event, context):
@@ -20,7 +20,7 @@ def lambda_handler(event, context):
     print(num_points, "random points:")
     points = np.random.rand(num_points, 2)
     for i, point in enumerate(points):
-        print(i, '->'m point)
+        print(i, '->', point)
 
     hull = ConvexHull(points)
     print("The smallest convex set containing all",
