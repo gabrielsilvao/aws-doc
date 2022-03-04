@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Lambda function inline
+Resources:
+  primer:
+    Type: AWS::Lambda:Function
+    Properties:
+      Runtime: python3.x
+      Role: arn:aws:iam:123456789012:role/lambda-role
+      Handler: index.handler
+      Code:
+        ZipFile: |
+          import os
+
+          DB_URL = os.getenv("DB_URL")
+          db_client = db.connect(DB_URL)
+          def handler(event, context):
+            user = db_client.get(user_id = event["user_id"])
+            return user
