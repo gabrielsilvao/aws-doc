@@ -1,3 +1,4 @@
+# S3 Access Logs
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   This template creates an Amazon S3 bucket that will be used for storing S3 server access logs.
