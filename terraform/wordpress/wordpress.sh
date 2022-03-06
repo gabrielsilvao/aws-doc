@@ -25,6 +25,7 @@ sudo sed -i 's/database_name_here/wordpress/' /wordpress/wp-config.php
 sudo sed -i 's/username_here/admin/' /wordpress/wp-config.php
 sudo sed -i 's/password_here/Seletiva#39/' /wordpress/wp-config.php
 sudo sed -i 's/localhost/${aws_db_instance.wordpress.endpoint}/' /wordpress/wp-config.php
+# The variable of terraform cannot be referenced through this file
 
 sudo cp -r /wordpress/* /var/www/html/
 
