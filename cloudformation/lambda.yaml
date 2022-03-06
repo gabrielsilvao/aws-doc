@@ -1,3 +1,4 @@
+# Creating a Lambda function with code in python
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Lambda function inline
 Resources:
