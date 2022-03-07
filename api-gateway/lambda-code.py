@@ -1,3 +1,4 @@
+# Create a function and integrate this with api gateway to clients access
 import json
 
 def lambda_handler(event, context):
