@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "name" {
+resource "aws_lambda_function" "http-crud-function" {
   filename = "index.zip"
   function_name = "http-crud-function"
   role = aws_iam_role.iam_for_lambda.arn
