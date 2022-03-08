@@ -1,6 +1,9 @@
 resource "aws_apigatewayv2_api" "http-crud-api" {
   name          = "http-crud-api"
   protocol_type = "HTTP"
+  depends_on = [
+    aws_dynamodb_table.http-crud
+  ]
 }
 
 resource "aws_apigatewayv2_integration" "http-crud-api" {
