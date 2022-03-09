@@ -13,7 +13,7 @@
       "Choices": [
         {
           "Variable": "$",
-          "StringMatches": "*Stephane*",
+          "StringMatches": "*Gabriel*",
           "Next": "Is Teacher"
         }
       ],
@@ -27,7 +27,7 @@
     "Not Teacher": {
       "Type": "Fail",
       "Error": "ErrorCode",
-      "Cause": "Stephane the teacher wasn't found in the output of the Lambda Function"
+      "Cause": "Gabriel the teacher wasn't found in the output of the Lambda Function"
     }
   }
 }
