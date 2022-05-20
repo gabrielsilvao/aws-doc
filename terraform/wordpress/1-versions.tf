@@ -6,11 +6,11 @@ terraform {
       version = "3.59.0"
     }
   }
-  backend "s3" {
-    bucket = "senaisenai132132"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
-  }
+#  backend "s3" {
+#    bucket = "senaisenai132132"
+#    key    = "terraform.tfstate"
+#    region = "us-east-1"
+#  }
 }
 
 provider "aws" {
