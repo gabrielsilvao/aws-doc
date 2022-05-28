@@ -1,0 +1,1 @@
+SELECT * FROM aws_service_logs.cf_access_optimized order by time desc LIMIT 10
