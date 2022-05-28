@@ -1,0 +1,1 @@
+SELECT count(*) AS rowcount FROM aws_service_logs.cf_access_optimized
