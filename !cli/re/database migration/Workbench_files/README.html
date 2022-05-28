@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<link href="./all.css" rel="stylesheet" type="text/css"><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/*
+Version: v1.4
+1. Updated colour to be more accessible.
+2. Included FontAwesome link directly in the css.
+3. Imported Buttons CSS.
+4. Updated font to Amazon Ember.
+*/
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #333333;
+}
+
+/* Importing Font Awesome */
+@import url("file:///C://Users//pjcksn//AppData//Roaming//Typora/themes/");
+
+/* @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext); /*
+
+
+/* Adding button support */
+#ssb_alexa_blue {
+background-color: #3366ff;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #3366ff;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_alexa_ocean {
+background-color: #00a0d2;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00a0d2;
+white-space: nowrap
+}
+#ssb_alexa_sand {
+background-color: #f2f2f2;
+font-weight: bold;
+font-size: 90%;
+color: #00a0d2;
+position: relative;
+top: -1px;
+border-color: #dcdcdc;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_alexa_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #00a0d2;
+position: relative;
+top: -1px;
+border-color: #00a0d2;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_blue {
+background-color: #257ACF;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_catalog_orange {
+background-color: #E36000;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_catalog_red {
+background-color: #D90000;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_dark_blue {
+color: white;
+background-color: darkblue;
+border-radius: 3px;
+padding: 0px 6px;
+white-space: nowrap
+}
+#ssb_grafana_blue {
+background-color: #00678b;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00678b;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grafana_green {
+background-color: #629300;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #629300;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grafana_orange {
+background-color: #ec8427;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #ec8427;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grey {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 5px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_grey_square {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_iot_blue {
+background-color: #00A1C9;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00A1C9;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_iot_grey {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: gray;
+position: relative;
+top: -1px;
+border-color: gray;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_iot_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #00A1C9;
+position: relative;
+top: -1px;
+border-color: #00A1C9;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_kibana_blue {
+background-color: #0079a5;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0079a5;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_kibana_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #0079a5;
+position: relative;
+top: -1px;
+border-color: #0079a5;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_lambda_orange {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_lambda_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_maroon {
+color: white;
+background-color: darkred;
+border-radius: 3px;
+padding: 0px 6px;
+white-space: nowrap
+}
+#ssb_orange {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssl_orange {
+color: #ec7211;
+font-weight: bold
+}
+#ssb_orange_oval {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+white-space: nowrap
+}
+#ssb_oval {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 20px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_start_lab {
+background-color: #34A853;
+font-weight: bold;
+font-size: 90%;
+color: white;
+border-radius: 2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 3px;
+padding-bottom: 3px
+}
+#ssb_open_console {
+background-color: white;
+font-family: Google Sans;
+font-weight: bold;
+font-size: 90%;
+color: #1a73e8;
+border-color: #dadce0;
+border-radius: 4px;
+border-width: 2px;
+border-style: solid;
+outline-color: #ffffff;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px
+}
+#ssb_rds_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_red {
+background-color: #D93025;
+font-weight: bold;
+font-size: 90%;
+color: white;
+border-radius: 2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 3px;
+padding-bottom: 3px
+}
+#ssb_red_oval {
+background-color: #D93025;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+white-space: nowrap
+}
+#ssb_s3_blue {
+background-color: #329AD6;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_s3_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #329AD6;
+position: relative;
+top: -1px;
+border-color: #329AD6;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_services {
+background-color: #232f3e;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_square_lex {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #1166bb;
+position: relative;
+top: -1px;
+border-color: #c4cbcd;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px
+}
+#ssb_ssm_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssbox_cloudformation_blue {
+font-weight: bold;
+background-color: #f1faff;
+font-size: 90%;
+border-color: #00A1C9;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssl_alexa_ocean {
+color: #00a0d2;
+font-weight: bold
+}
+#ssl_blue {
+color: #1166bb;
+font-weight: bold
+}
+#ssl_catalog_orange {
+color: #E16706;
+font-weight: bold
+}
+#ssb_codestar_blue {
+background-color: #329AD6;
+font-weight: bold;
+font-size: 80%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_cognito_blue {
+background-color: #2a7fd4;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0055aa;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_eb_blue {
+background-color: #0f6dca;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0055aa;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+white-space: nowrap;
+}
+#ssb_eb_grey {
+background-color: #e5e5e5;
+font-weight: bold;
+font-size: 90%;
+color: 444444;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #bbbbbb;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+white-space: nowrap
+}
+#ssb_voc_grey {
+background-color: #F2F3F4;
+font-size: 90%;
+color: black;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: grey;
+border-width: 1px;
+border-style: solid;
+white-space: nowrap
+}
+
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Amazon Ember", "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #0071bc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #5b616b;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #5b616b; /*#777777*/
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #323a45;  /*#777777*/
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #323a45; /*a7a7a7*/
+    opacity: 1;
+}
+
+.md-toc {
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #ffffff;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #981b1e;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));
+}
+
+
+
+</style><title>README</title>
+<!-- START Inserted by CORE -->
+<style type="text/css">
+   #ssb_alexa_blue {
+   background-color: #3366ff;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #3366ff;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_alexa_ocean {
+   background-color: #00a0d2;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #00a0d2;
+   white-space: nowrap
+   }
+   #ssb_alexa_sand {
+   background-color: #f2f2f2;
+   font-weight: bold;
+   font-size: 90%;
+   color: #00a0d2;
+   position: relative;
+   top: -1px;
+   border-color: #dcdcdc;
+   border-style: solid;
+   border-width: 2px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_alexa_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #00a0d2;
+   position: relative;
+   top: -1px;
+   border-color: #00a0d2;
+   border-style: solid;
+   border-width: 2px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_blue {
+   background-color: #257ACF;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 5px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_catalog_orange {
+   background-color: #E36000;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_catalog_red {
+   background-color: #D90000;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 5px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_dark_blue {
+   color: white;
+   background-color: darkblue;
+   border-radius: 3px;
+   padding: 0px 6px;
+   white-space: nowrap
+   }
+   #ssb_grafana_blue {
+   background-color: #00678b;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #00678b;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_grafana_green {
+   background-color: #629300;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #629300;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_grafana_orange {
+   background-color: #ec8427;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #ec8427;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_grey {
+   background-color: #DEDEDE;
+   font-weight: bold;
+   font-size: 90%;
+   color: #444;
+   position: relative;
+   top: -1px;
+   border-radius: 5px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #444;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_grey_square {
+   background-color: #DEDEDE;
+   font-weight: bold;
+   font-size: 90%;
+   color: #444;
+   position: relative;
+   top: -1px;
+   border-radius: 1px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #444;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_iot_blue {
+   background-color: #00A1C9;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #00A1C9;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_iot_grey {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: gray;
+   position: relative;
+   top: -1px;
+   border-color: gray;
+   border-radius: 2px;
+   border-style: solid;
+   border-width: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_iot_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #00A1C9;
+   position: relative;
+   top: -1px;
+   border-color: #00A1C9;
+   border-radius: 2px;
+   border-style: solid;
+   border-width: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_kibana_blue {
+   background-color: #0079a5;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #0079a5;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_kibana_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #0079a5;
+   position: relative;
+   top: -1px;
+   border-color: #0079a5;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_lambda_orange {
+   background-color: #ec7211;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_lambda_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_maroon {
+   color: white;
+   background-color: darkred;
+   border-radius: 3px;
+   padding: 0px 6px;
+   white-space: nowrap
+   }
+   #ssb_orange {
+   background-color: #ec7211;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssl_orange {
+   color: #ec7211;
+   font-weight: bold
+   }
+   #ssb_orange_oval {
+   background-color: #ec7211;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 20px;
+   white-space: nowrap
+   }
+   #ssb_oval {
+   background-color: #DEDEDE;
+   font-weight: bold;
+   font-size: 90%;
+   color: #444;
+   position: relative;
+   top: -1px;
+   border-radius: 20px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #444;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_start_lab {
+   background-color: #34A853;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   border-radius: 2px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px
+   }
+   #ssb_open_console {
+   background-color: white;
+   font-family: Google Sans;
+   font-weight: bold;
+   font-size: 90%;
+   color: #1a73e8;
+   border-color: #dadce0;
+   border-radius: 4px;
+   border-width: 2px;
+   border-style: solid;
+   outline-color: #ffffff;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px
+   }
+   #ssb_rds_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_red {
+   background-color: #D93025;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   border-radius: 2px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px
+   }
+   #ssb_red_oval {
+   background-color: #D93025;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 20px;
+   white-space: nowrap
+   }
+   #ssb_s3_blue {
+   background-color: #329AD6;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_s3_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #329AD6;
+   position: relative;
+   top: -1px;
+   border-color: #329AD6;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_services {
+   background-color: #232f3e;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_square_lex {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #1166bb;
+   position: relative;
+   top: -1px;
+   border-color: #c4cbcd;
+   border-style: solid;
+   border-width: 2px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px
+   }
+   #ssb_ssm_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssb_white {
+   background-color: white;
+   font-weight: bold;
+   font-size: 90%;
+   color: #545b64;
+   position: relative;
+   top: -1px;
+   border-color: #545b64;
+   border-radius: 2px;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssbox_cloudformation_blue {
+   font-weight: bold;
+   background-color: #f1faff;
+   font-size: 90%;
+   border-color: #00A1C9;
+   border-width: 1px;
+   border-style: solid;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+   #ssl_alexa_ocean {
+   color: #00a0d2;
+   font-weight: bold
+   }
+   #ssl_blue {
+   color: #1166bb;
+   font-weight: bold
+   }
+   #ssl_catalog_orange {
+   color: #E16706;
+   font-weight: bold
+   }
+   #ssb_codestar_blue {
+   background-color: #329AD6;
+   font-weight: bold;
+   font-size: 80%;
+   color: white;
+   position: relative;
+   top: -1px;
+   border-radius: 1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap
+   }
+   #ssb_cognito_blue {
+   background-color: #2a7fd4;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #0055aa;
+   border-radius: 2px;
+   white-space: nowrap
+   }
+   #ssb_eb_blue {
+   background-color: #0f6dca;
+   font-weight: bold;
+   font-size: 90%;
+   color: white;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #0055aa;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 4px;
+   white-space: nowrap;
+   }
+   #ssb_eb_grey {
+   background-color: #e5e5e5;
+   font-weight: bold;
+   font-size: 90%;
+   color: 444444;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: #bbbbbb;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 4px;
+   white-space: nowrap
+   }
+   #ssb_voc_grey {
+   background-color: #F2F3F4;
+   font-size: 90%;
+   color: black;
+   position: relative;
+   top: -1px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-color: grey;
+   border-width: 1px;
+   border-style: solid;
+   white-space: nowrap
+   }
+   </style>
+<!-- END Inserted by CORE -->
+
+<!-- START Inserted by CORE -->
+<link rel="stylesheet" href="./all(1).css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<style>
+	.ssb_qwiklab_green{
+		background-color: yellowgreen;
+		font-weight: bold;
+		font-size: 90%;
+		color: white;
+		border-radius: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.ssb_blue {
+		background-color: #257ACF;
+		font-weight: bold;
+		font-size: 90%;
+		color: white;
+		border-radius: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.ssb_voc_grey {
+		background-color: #F2F3F4;
+		font-weight: normal;
+		font-size: 90%;
+		color: black;
+		border-radius: 3px;
+		border: 1px solid gray;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 6px;
+		padding-right: 6px;
+		white-space: nowrap;
+	}
+	.ssb_grey {
+		background-color: #DEDEDE;
+		font-weight: bold;
+		font-size: 90%;
+		color: #444;
+		position: relative;
+		top:-1px;
+		border-radius: 5px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #444;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.ssl_alexa_ocean {
+		color: #00a0d2;
+		font-weight: bold;
+	}
+
+ 	.ssb_services {
+		background-color:#232f3e;
+		font-weight:bold;
+		font-size:90%;
+		color:white;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.ssb_orange {
+		background-color:#ec7211;
+		font-weight:bold;
+		font-size:90%;
+		color:white;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+		white-space:
+		nowrap;
+	}
+	.ssbox_cloudformation_blue {
+		font-weight:bold;
+		background-color:#f1faff;
+		font-size:90%;
+		border-color:#00A1C9;
+		border-width:1px;
+		border-style:solid;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.ssb_ssm_white {
+		background-color:white;
+		font-weight:bold;
+		font-size:90%;
+		color:#545b64;
+		border-color:#545b64;
+		border-radius:2px;
+		border-width:1px;
+		border-style:solid;
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+</style>
+
+<!-- END Inserted by CORE -->
+
+</head>
+<body class="typora-export os-windows"><div class="typora-export-content">
+<div id="write" class=""><h1 id="atividade---migrar-para-o-amazon-rds"><span>Atividade - Migrar para o Amazon RDS</span></h1><!---
+Note for Translators: This lab is based on Academy Cloud Operations. You should be able to copy a lot of translated text from that lab.
+--><h2 id="visão-geral-da-atividade"><span>Visão geral da atividade</span></h2><p><span>Nesta atividade, você migrará a aplicação Web do Café para usar uma instância totalmente gerenciada do Amazon Relational Database Service (Amazon RDS), em vez de uma instância de banco de dados local.</span></p><p><span>Este diagrama ilustra a topologia do ambiente de tempo de execução da aplicação Web do Café antes da migração. O banco de dados da aplicação é executado em uma instância do Amazon Elastic Compute Cloud (Amazon EC2) LAMP (Linux, servidor Web Apache, MySQL e PHP) com o código da aplicação. A instância tem um tipo de </span><em><span>t3 pequeno</span></em><span> e é executada em uma </span><em><span>sub-rede pública</span></em><span> para permitir que clientes da Internet acessem o site. Uma instância </span><em><span>CLI Host</span></em><span> (Host da CLI) reside na mesma sub-rede para permitir a administração da instância usando a Interface de linhas de comando da AWS (CLI da AWS).</span></p><p><strong><span>Diagrama da topologia do banco de dados antes da migração</span></strong></p><p><img src="./before-migration-topology.png" alt="diagrama antes da migração" width="400"></p><p><span>O diagrama a seguir ilustra a topologia do ambiente de tempo de execução da aplicação Web do Café após a migração.</span></p><p><span>Você migrará o banco de dados local do Café para um banco de dados do Amazon Relational Database Service (Amazon RDS) que está fora da instância. O banco de dados do RDS será implantado na mesma nuvem privada virtual (VPC) da instância.</span></p><p><span>Durante o processo de migração, você criará os componentes ilustrados neste diagrama, incluindo duas sub-redes privadas em diferentes zonas de disponibilidade, um grupo de segurança para a instância de banco de dados e a própria instância de banco de dados do RDS. Após a migração do banco de dados, você vai reconfigurar a aplicação do Café para usar o banco de dados da instância do RDS, em vez do banco de dados local.</span></p><p><a id="after-migration-topology-diagram"></a></p><p><strong><span>Diagrama da topologia do banco de dados após a migração</span></strong></p><p><img src="./after-migration-topology.png" alt="diagrama após a migração" width="800"></p><p>&nbsp;</p><h2 id="objetivos-da-atividade"><span>Objetivos da atividade</span></h2><p><span>Depois de concluir esta atividade, você poderá:</span></p><ul><li><strong><span>Criar</span></strong><span> uma instância MariaDB do Amazon RDS usando a AWS CLI.</span></li><li><strong><span>Migrar</span></strong><span> dados de um banco de dados MariaDB local para um banco de dados MariaDB do Amazon RDS.</span></li><li><strong><span>Monitorar</span></strong><span> uma instância do Amazon RDS usando as métricas do Amazon CloudWatch.</span></li></ul><p>&nbsp;</p><h2 id="relevância-de-casos-de-negócio"><span>Relevância de casos de negócio</span></h2><p><strong><span>Um novo requisito de negócio para o Café: automatizar tarefas de manutenção de banco de dados e reduzir custos de administração de banco de dados</span></strong></p><p><img src="./Calculating.jpg" alt="Cálculo" width="400"></p><p><span>A administração do banco de dados do Café está ficando difícil para a Sofía e Nikhil. Por exemplo, fazer backups semanais do banco de dados exige que eles trabalhem horas extras nos fins de semana porque precisam enviar manualmente o trabalho de backup. Eles também devem verificar sua execução bem-sucedida durante as horas em que a empresa está fechada.</span></p><p><span>Além disso, eles tiveram dificuldades recentemente com a instalação de um patch necessário e mal conseguiram completá-lo durante o fim de semana após o horário. Martha e Frank também estão percebendo que essas tarefas de manutenção estão aumentando os custos trabalhistas da empresa, pois eles precisam pagar pelas horas extras que Sofia e Nikhil devem trabalhar. Assim, eles entraram em contato com a equipe da AWS para solicitar algumas recomendações.</span></p><p><span>Olivia, arquiteta de soluções da AWS, analisou a solicitação de Martha e Frank e sugeriu que migrassem o banco de dados para o Amazon RDS. Essa solução reduzirá a carga manual das tarefas comuns de manutenção do banco de dados, como backups, instalação de patches e upgrades. Como um serviço totalmente gerenciado, o Amazon RDS executa essas tarefas automaticamente.</span></p><p><span>Nesta atividade, você assumirá os papéis de Nikhil e Sofía, e trabalhará na migração do banco de dados do Café para o Amazon RDS.</span></p><p>&nbsp;</p><h2 id="etapas-da-atividade"><span>Etapas da atividade</span></h2><p><strong><span>Duração:</span></strong><span> esta atividade requer aproximadamente </span><strong><span>75 minutos</span></strong><span> para ser concluída.</span></p><p>&nbsp;</p><h2 id="acesso-ao-console-de-gerenciamento-da-aws"><span>Acesso ao Console de Gerenciamento da AWS</span></h2><ol start=""><li><p><span>Na parte superior destas instruções, clique em </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel Start Lab (Iniciar laboratório) é aberto exibindo o status do laboratório.</span></p></li><li><p><span>Aguarde até que a mensagem “</span><strong><span>Lab status: ready</span></strong><span>” (Status do laboratório: pronto) seja exibida e clique no </span><strong><span>X</span></strong><span> para fechar o painel Start Lab (Iniciar laboratório).</span></p></li><li><p><span>Na parte superior destas instruções, clique em </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Isso abrirá o Console de Gerenciamento da AWS em uma nova guia do navegador. O sistema fará o seu login automaticamente.</span></p><p><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta normalmente, um banner ou um ícone na parte superior do navegador indicará que o navegador está impedindo que o site abra janelas pop-up. Clique no banner ou ícone e escolha "Allow pop ups" (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do Console de Gerenciamento da AWS para que ela seja exibida com estas instruções. De preferência, você poderá visualizar as duas guias do navegador ao mesmo tempo a fim de facilitar o acompanhamento das etapas do laboratório.</span></p><p><span>Deixe esta guia do navegador aberta. Você retornará a ela mais tarde nesta atividade.</span></p></li></ol><p>&nbsp;</p><h2 id="tarefa-1-criar-uma-instância-do-amazon-rds-usando-a-cli-da-aws"><span>Tarefa 1: Criar uma instância do Amazon RDS usando a CLI da AWS</span></h2><p><span>Nesta tarefa, você cria uma instância do Amazon RDS usando a AWS CLI. Comece abrindo uma sessão Secure Shell (SSH) na instância do host da CLI que está sendo executada em seu ambiente. Essa instância já tem a CLI da AWS instalada. Usando a sessão SSH, execute os comandos da CLI da AWS para:</span></p><ul><li><strong><span>Coletar</span></strong><span> informações de configuração do ambiente existente do Café.</span></li><li><strong><span>Criar</span></strong><span> duas sub-redes privadas e um grupo de sub-redes de banco de dados. Esses componentes são necessários para criar a instância do Amazon RDS.</span></li><li><strong><span>Criar</span></strong><span> a instância MariaDB do Amazon RDS.</span></li></ul><p>&nbsp;</p><h3 id="tarefa-11-conectar-se-à-instância-de-host-da-cli-usando-ssh"><span>Tarefa 1.1: Conectar-se à instância de host da CLI usando SSH</span></h3><p><span>Se você for um usuário do Windows, siga as etapas descritas na Tarefa 1.1.1. Caso contrário, se você for um usuário do macOS ou Linux, siga as etapas na Tarefa 1.1.2.</span></p><p><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#ssh-mac"><span>Usuários do macOS/Linux: cliquem aqui para obter instruções de login</span></a></p><p>&nbsp;</p><h4 id="tarefa-111-windows-ssh"><span>Tarefa 1.1.1: Windows SSH</span></h4><p><i class="fas fa-comment"></i><span> Estas instruções são apenas para usuários do Windows.</span></p><p><span>Se você estiver usando macOS ou Linux, </span><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#ssh-MACLinux"><span>vá para a próxima seção</span></a><span>.</span></p><ol start="5"><li><p><span>Leia os três tópicos desta etapa antes de iniciar a execução das ações, uma vez que não será possível visualizar essas instruções quando o painel Details (Detalhes) estiver aberto.</span></p><ul><li><span>Clique no menu suspenso </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) acima das instruções que você está lendo no momento e clique em </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Exibir). Uma janela Credentials (Credenciais) será aberta.</span></li><li><span>Clique no botão </span><strong><span>Download PPK</span></strong><span> (Fazer download do PPK) e salve o arquivo </span><strong><span>labsuser.ppk</span></strong><span>. Normalmente, seu navegador o salva no diretório Downloads.</span></li><li><span>Em seguida, saia do painel Details (Detalhes) clicando no </span><strong><span>X</span></strong><span>.</span></li></ul></li><li><p><span>Faça download do software necessário.</span></p><ul><li><span>Você usará o </span><strong><span>PuTTY</span></strong><span> para se conectar às instâncias Amazon EC2 com SSH. Se você não tiver o PuTTY instalado no computador, </span><a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"><span>faça download aqui</span></a><span>.</span></li></ul></li><li><p><span>Abra o </span><strong><span>putty.exe</span></strong></p></li><li><p><span>Configure o PuTTY para não atingir o tempo limite:</span></p><ul><li><span>Clique em </span><strong><span>Connection</span></strong><span> (Conexão)</span></li><li><span>Defina </span><strong><span>Seconds between keepalives</span></strong><span> (Segundos entre os keepalives) como </span><code>30</code></li></ul><p><span>Isso permite manter a sessão do PuTTY aberta por mais tempo.</span></p></li><li><p><span>Configure a sessão do PuTTY:</span></p><ul><li><span>Clique em </span><strong><span>Session</span></strong><span> (Sessão)</span></li><li><strong><span>Host Name</span></strong><span> (or IP address) (Nome do host ou endereço IP): copie e cole o </span><strong><span>IPv4 Public IP address</span></strong><span> (Endereço IP público IPv4) da instância do host da CLI. Para encontrá-lo, retorne ao console do EC2 e clique em </span><strong><span>Instances</span></strong><span> (Instâncias). Verifique a caixa ao lado da instância do Host da CLI com a qual você quer se conectar e, na guia </span><em><span>Description</span></em><span> (Descrição), copie o valor </span><strong><span>IPv4 Public IP</span></strong><span> (IP público do IPv4).</span></li><li><span>De volta ao PuTTy, na lista </span><strong><span>Connection (Conexão)</span></strong><span>, expanda </span><i class="far fa-plus-square"></i><span> </span><strong><span>SSH</span></strong></li><li><span>Clique em </span><strong><span>Auth</span></strong><span> (Autenticação) (não expanda)</span></li><li><span>Clique em </span><strong><span>Browse</span></strong><span> (Procurar)</span></li><li><span>Procure e selecione o arquivo lab#.ppk obtido por download.</span></li><li><span>Clique em </span><strong><span>Open</span></strong><span> (Abrir) para selecioná-lo</span></li><li><span>Clique em </span><strong><span>Open</span></strong><span> (Abrir)</span></li></ul></li><li><p><span>Clique em </span><strong><span>Yes</span></strong><span> (Sim) para confiar no host e conectar-se a ele.</span></p></li><li><p><span>Quando </span><strong><span>login as</span></strong><span> (fazer login como) for solicitado, digite: </span><code>ec2-user</code></p></li></ol><p><span>   Isso conectará você à instância do EC2.</span></p><ol start="12"><li><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#ssh-after"><span>Usuários do Windows: clique aqui para avançar para a próxima tarefa.</span></a></li></ol><p><a id="ssh-MACLinux"></a></p><p>&nbsp;</p><h4 id="tarefa-112-ssh-macoslinux"><span>Tarefa 1.1.2: SSH macOS/Linux</span></h4><p><span>Estas instruções são apenas para usuários do Mac/Linux. Se você for um usuário do Windows, </span><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#ssh-after"><span>avance para a próxima tarefa.</span></a></p><ol start="13"><li><span>Leia os três tópicos desta etapa antes de iniciar a execução das ações, uma vez que não será possível visualizar essas instruções quando o painel Details (Detalhes) estiver aberto.</span></li></ol><ul><li><span>Clique no menu suspenso </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) acima das instruções que você está lendo no momento e clique em </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Exibir). Uma janela Credentials (Credenciais) será aberta.</span></li><li><span>Clique no botão </span><strong><span>Download PEM</span></strong><span> (Fazer o download do PEM) e salve o arquivo </span><strong><span>labsuser.pem</span></strong><span>.</span></li><li><span>Em seguida, saia do painel Details (Detalhes) clicando no </span><strong><span>X</span></strong><span>.</span></li></ul><ol start="14"><li><p><span>Abra uma janela do terminal e altere o diretório </span><code>cd</code><span> para o diretório no qual foi feito o download do arquivo labsuser.pem.</span></p><p><span>Por exemplo, execute este comando se ele tiver sido salvo no diretório Downloads:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/Downloads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Execute o comando abaixo para alterar as permissões na chave para somente leitura:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">chmod</span> <span class="cm-number">400</span> labsuser.pem</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Retorne ao Console de gerenciamento da AWS e, no serviço EC2, clique em </span><strong><span>Instances</span></strong><span> (Instâncias). Marque a caixa ao lado da instância do Host da CLI com a qual você deseja se conectar.</span></p></li><li><p><span>Na guia </span><em><span>Description</span></em><span> (Descrição), copie o valor </span><strong><span>IPv4 Public IP</span></strong><span> (IP público IPv4).</span></p></li><li><p><span>Retorne à janela do terminal e execute este comando (substitua </span><strong><span>&lt;public-ip</span><span>&gt;</span></strong><span> pelo endereço IP público real que você copiou):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> <span class="cm-attribute">-i</span> labsuser.pem ec2-user@&lt;public-ip&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Digite </span><code>yes</code><span> (sim) quando solicitado a permitir para primeira conexão com esse servidor SSH remoto.</span></p></li></ol><p><span>   Como você está usando um par de chaves para autenticação, não será necessário fornecer uma senha.</span></p><p><a id="ssh-after"></a></p><p>&nbsp;</p><h4 id="tarefa-113-configurar-a-cli-da-aws"><span>Tarefa 1.1.3: Configurar a CLI da AWS</span></h4><p><span>Antes de executar comandos da CLI da AWS na instância de hosta da CLI, você deve primeiro configurar o ambiente da CLI da AWS para definir as credenciais da conta da AWS, o nome da região e o formato de saída a serem usados.</span></p><ol start="20"><li><p><span>Atualize o software da CLI da AWS com as credenciais.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws configure</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Nos prompts (solicitações), insira as seguintes informações:</span></p></li></ol><ul><li><strong><span>AWS Access Key ID</span></strong><span> (ID de chave de acesso da AWS): clique no menu suspenso </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) acima destas instruções e, em seguida, clique em </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Exibir). Copie o valor </span><strong><span>AccessKey</span></strong><span> e cole-o na janela do terminal.</span></li><li><strong><span>AWS Secret Access Key</span></strong><span> (Chave de acesso secreta da AWS): copie e cole o valor </span><strong><span>SecretKey</span></strong><span> na mesma tela Credentials (Credenciais).</span></li><li><strong><span>Default region name</span></strong><span> (Nome da região padrão): digite o nome da região na qual a instância do servidor web do Café foi criada para você. Para determinar isso, retorne ao Console de Gerenciamento da AWS e navegue até o serviço do EC2. Por padrão, a interface do usuário exibirá a região em que as instâncias do EC2 foram criadas para você. Por exemplo, </span><code>us-east-1</code><span> ou </span><code>us-west-2</code><span>.</span></li><li><strong><span>Default output format</span></strong><span> (Formato de saída padrão): </span><code>json</code></li></ul><p>&nbsp;</p><h3 id="tarefa-12-coletar-informações-de-configuração-do-ambiente-atual"><span>Tarefa 1.2: Coletar informações de configuração do ambiente atual</span></h3><p><span>Conforme ilustrado no </span><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#after-migration-topology-diagram"><span>diagrama de topologia após a migração</span></a><span>, você criará a instância do Amazon RDS na mesma VPC em que a instância do Café está sendo executada. Portanto, colete e anote algumas informações-chave sobre o ambiente atual. Especificamente, determine as seguintes informações:</span></p><ul><li><strong><span>Instance ID</span></strong><span> (ID da instância) da CafeInstance</span></li><li><strong><span>Instance type</span></strong><span> (Tipo de instância) da CafeInstance</span></li><li><strong><span>Public DNS name</span></strong><span> (Nome DNS público) da CafeInstance</span></li><li><strong><span>Public IP addres</span></strong><span> (Endereço IP público) da CafeInstance</span></li><li><strong><span>Availability Zone</span></strong><span> (Zona de disponibilidade) da CafeInstance</span></li><li><strong><span>VPC ID</span></strong><span> (ID da VPC) da VPC do Cafe</span></li><li><strong><span>Group ID</span></strong><span> (ID do grupo) de CafeSecurityGroup</span></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4) da VPC do Cafe</span></li><li><strong><span>Subnet ID</span></strong><span> (Identificação da sub-rede) da sub-rede pública do Café 1</span></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4) da sub-rede pública do Café 1</span></li><li><span>Lista de </span><strong><span>Availability Zones</span></strong><span> (zonas de disponibilidade) na região</span></li></ul><p><span>Nesta tarefa, você usa a AWS CLI para recuperar essas informações necessárias. Use vários comandos para coletá-las, de modo a primeiro testar e descobrir esses comandos por conta própria. </span><em><span>Também é recomendável que você salve as informações em seu editor de texto favorito para que possa recuperá-las facilmente mais tarde.</span></em><span> Você também pode usar o editor de texto para fazer as substituições necessárias em um comando antes de executá-lo.</span></p><p><strong><span>Dica:</span></strong><span> use a </span><a href="https://docs.aws.amazon.com/cli/latest/reference/ec2/" target="_blank"><span>documentação da CLI da AWS para o EC2</span></a><span> para ajudar a determinar a sintaxe correta dos comandos da CLI da AWS que você deverá usar nesta tarefa.</span></p><p><span>Ao final da tarefa, você abrirá a aplicação Web do Café em um navegador para testar a funcionalidade e preencher o banco de dados.</span></p><ol start="22"><li><p><span>Determine o </span><strong><span>Instance ID</span></strong><span> (ID da instância), </span><strong><span>Instance Type</span></strong><span> (Tipo de instância), </span><strong><span>Public DNS name</span></strong><span> (Nome do DNS público), </span><strong><span>Public IP address</span></strong><span> (Endereço IP público) e </span><strong><span>Availability Zone</span></strong><span> (Zona de disponibilidade) da CafeInstance. Use um comando da CLI da AWS que também retorne o </span><strong><span>VPC ID</span></strong><span> (ID da VPC) e o </span><strong><span>Group ID</span></strong><span> (ID do grupo) de segurança. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-instances \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--filters</span> <span class="cm-string">"Name=tag:Name,Values= CafeInstance"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--query</span> <span class="cm-string">"Reservations[*].Instances[*].[InstanceId,InstanceType,PublicDnsName,PublicIpAddress,Placement.AvailabilityZone,VpcId,SecurityGroups[*].GroupId]"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p><strong><span>Informações:</span></strong><span> Para legibilidade, comandos grandes são divididos em linhas separadas usando o caractere de continuação de linha de barra invertida (</span><code>\</code><span>) para a linha de comando do Linux. A barra invertida permite que você insira várias linhas em um prompt do Linux.</span></p><p><span>Observe o uso das opções de </span><em><span>filters</span></em><span> (filtros) e </span><em><span>query</span></em><span> (consulta) no comando para selecionar a instância correta e especificar as informações que você deseja recuperar, respectivamente.</span></p></li><li><p><span>Depois que o comando é executado, ele retorna os valores dos atributos consultados. Grave-os no seguinte formato para uso posterior:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeInstance Instance ID: i-nnnnnnnnnn</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeInstance Instance Type: t3.small</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeInstance Public DNS Name: ec2-xxx-xxx-xxx-xxx.us-west-2.compute.amazonaws.com</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeInstance Public IP Address: nnn.nnn.nnn.nnn</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeInstance Availability Zone: us-west-2a</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeInstance VPC ID: vpc-xxxxxxxxxxx</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeSecurityGroup Group ID: sg-zzzzzzzzzz</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 179px;"></div><div class="CodeMirror-gutters" style="display: none; height: 179px;"></div></div></div></pre></li><li><p><span>Determine o </span><strong><span>bloco CIDR IPv4</span></strong><span> da VPC do Café. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-vpcs <span class="cm-attribute">--vpc-ids</span> &lt;CafeInstance VPC ID&gt; \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--filters</span> <span class="cm-string">"Name=tag:Name,Values= Cafe VPC"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--query</span> <span class="cm-string">"Vpcs[*].CidrBlock"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeInstance VPC ID</span>&gt;</em><span> pelo valor que você gravou anteriormente. Recomenda-se que você copie o comando para um editor de texto, faça a substituição necessária e cole o comando revisado na janela SSH.</span></p></li><li><p><span>Grave o valor retornado usando o seguinte formato:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Cafe VPC IPv4 CIDR block: <span class="cm-number">10</span>.200.0.0/20</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Determine o </span><strong><span>ID da sub-rede</span></strong><span> e o </span><strong><span>bloco CIDR IPv4</span></strong><span> da sub-rede pública 1 do Café, que é a única sub-rede na VPC. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-subnets \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--filters</span> <span class="cm-string">"Name=vpc-id,Values=&lt;CafeInstance VPC ID&gt;"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--query</span> <span class="cm-string">"Subnets[*].[SubnetId,CidrBlock]"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeInstance VPC ID</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p></li><li><p><span>Grave os valores que foram retornados usando o seguinte formato:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Cafe Public Subnet <span class="cm-number">1</span> Subnet ID: subnet-yyyyyyyyyyy</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Cafe Public Subnet <span class="cm-number">1</span> IPv4 CIDR block: <span class="cm-number">10</span>.200.0.0/24</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre></li><li><p><span>Determine a lista de </span><strong><span>Availability Zones</span></strong><span> (Zonas de disponibilidade) na região. No comando abaixo, substitua </span><em>&lt;<span>region</span>&gt;</em><span> pelo nome real da região (por exemplo, us-east-1 ou us-west-2). Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-availability-zones \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--filters</span> <span class="cm-string">"Name=region-name,Values=&lt;region&gt;"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--query</span> <span class="cm-string">"AvailabilityZones[*].ZoneName"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre></li><li><p><span>O comando deve retornar todas as zonas de disponibilidade na região. Grave esses valores usando o seguinte formato (o exemplo aqui mostra como você gravaria se a região fosse us-west-2):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">List of Availability Zones <span class="cm-keyword">in</span> the region: us-west-2a, us-west-2b, and us-west-2c</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre></li><li><p><span>Por fim, abra a aplicação Web do Café e faça alguns pedidos para colocar dados de transação no banco de dados. Em uma janela do navegador, insira a seguinte URL:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://&lt;CafeInstance Public DNS Name&gt;/cafe</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Substitua </span><em>&lt;<span>CafeInstance Public DNS Name</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p></li><li><p><span>Vá para a página </span><strong><span>Histórico de pedidos</span></strong><span> para anotar o número de pedidos que você fez. Posteriormente nesta atividade, você poderá comparar esse número com o número de pedidos no banco de dados migrado:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Number of orders: nn</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Quando terminar de anotar o número de pedidos, feche a guia do navegador do Café.</span></p></li></ol><p><span>   Neste ponto, as informações coletadas para o ambiente atual devem ser semelhantes ao seguinte:</span></p><ul><li><span>ID da instância do CafeInstance: </span><strong><span>i.nnnnnnnnnn</span></strong></li><li><span>Tipo de instância do CafeInstance: </span><strong><span>t3.small</span></strong></li><li><span>Nome da DNS pública do CafeInstance: </span><strong><span>ec2-xxx-xxx-xxx-xxx.us-west-2.compute.amazonaws.com</span></strong></li><li><span>Endereço IP público do CafeInstance: </span><strong><span>nnn.nnn.nnn.nnn</span></strong></li><li><span>Zona de disponibilidade do CafeInstance: </span><strong><span>us-west-2a</span></strong></li><li><span>ID da VPC do CafeInstance: </span><strong><span>vpc-xxxxxxxxxxx</span></strong></li><li><span>ID do grupo do CafeSecurityGroup: </span><strong><span>sg-zzzzzzzzzz</span></strong></li><li><span>Bloco CIDR IPv4 da VPC do Café: </span><strong><span>10.200.0.0/20</span></strong></li><li><span>ID de sub-rede 1 da sub-rede pública do Café: </span><strong><span>subnet-yyyyyyyyyyy</span></strong></li><li><span>Bloco CIDR IPv4 da sub-rede pública 1 do Café: </span><strong><span>10.200.0.0/24</span></strong></li><li><span>Lista de zonas de disponibilidade na região: </span><strong><span>us-west-2a</span></strong><span>, </span><strong><span>us-west-2b</span></strong><span> e </span><strong><span>us-west-2c</span></strong></li><li><span>Número de pedidos: </span><strong><span>nn</span></strong></li></ul><p>&nbsp;</p><h3 id="tarefa-13-criar-componentes-de-pré-requisito"><span>Tarefa 1.3: Criar componentes de pré-requisito</span></h3><p><span>Nesta tarefa, você cria os componentes de infraestrutura de pré-requisitos para a instância do Amazon RDS. Especificamente, você cria os seguintes componentes que são mostrados no </span><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#after-migration-topology-diagram"><span>Diagrama da topologia após a migração</span></a></p><ul><li><strong><span>CafeDataBaseSG</span></strong><span> (Grupo de segurança)</span></li><li><strong><span>Sub-rede privada 1 do CafeDB</span></strong></li><li><strong><span>Sub-rede privada 2 do CafeDB</span></strong></li><li><strong><span>Grupo de sub-redes do CafeDB</span></strong><span> (Grupo de sub-redes de banco de dados)</span></li></ul><ol start="33"><li><p><span>Crie o grupo de segurança </span><em><span>CafeDatabaseSG</span></em><span>. Esse grupo de segurança é usado para proteger a instância do Amazon RDS. Ele deverá ter uma regra de entrada que permita somente solicitações do </span><em><span>MySQL</span></em><span> (usando o protocolo </span><em><span>TCP</span></em><span> padrão e a porta </span><em><span>3306</span></em><span>) das instâncias associadas ao </span><em><span>CafeSecurityGroup</span></em><span>. Essa regra garante que somente CafeInstance seja capaz de acessar o banco de dados. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-security-group \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--group-name</span> CafeDatabaseSG \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--description</span> <span class="cm-string">"Security group for Cafe database"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--vpc-id</span> &lt;CafeInstance VPC ID&gt;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeInstance VPC ID</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p></li><li><p><span>Depois que o comando for concluído, anote o </span><strong><span>GroupID</span></strong><span> retornado como:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">CafeDatabaseSG Group ID: sg-zzzzzzzzzz</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Em seguida, crie a regra de entrada para o grupo de segurança. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 authorize-security-group-ingress \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--group-id</span> &lt;CafeDatabaseSG Group ID&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--protocol</span> tcp <span class="cm-attribute">--port</span> <span class="cm-number">3306</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--source-group</span> &lt;CafeSecurityGroup Group ID&gt;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeDatabaseSG Group ID</span>&gt;</em><span> e *</span>&lt;<span>CafeSecurityGroup Group ID</span>&gt;<span>** pelos valores que você anotou anteriormente. </span><em><span>Tenha cuidado para fazer as substituições corretas.</span></em></p></li><li><p><span>Execute o seguinte comando para confirmar se a regra de entrada foi aplicada adequadamente:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-security-groups \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--query</span> <span class="cm-string">"SecurityGroups[*].[GroupName,GroupId,IpPermissions]"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--filters</span> <span class="cm-string">"Name=group-name,Values='CafeDatabaseSG'"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>A saída do comando deve mostrar que o grupo de segurança CafeDatabaseSG agora tem uma regra de entrada que permite conexões da porta TCP 3306, se a origem da conexão for uma instância que tenha a associação do ID do grupo CafeSecurityGroup.</span></p><p><span>Ao criar uma instância de banco de dados do Amazon RDS em uma VPC, você deve ter duas sub-redes privadas ou duas sub-redes públicas disponíveis para que possa formar um grupo de sub-redes de banco de dados. Portanto, você cria </span><em><span>duas sub-redes privadas</span></em><span> e um </span><em><span>grupo de sub-redes de banco de dados</span></em><span> em seguida.</span></p></li><li><p><span>Crie a </span><strong><span>sub-rede privada do CafeDB 1</span></strong><span>. Essa sub-rede hospeda a instância de banco de dados do Amazon RDS. É uma sub-rede privada definida na mesma zona de disponibilidade do CafeInstance.</span></p></li></ol><p><span>   Atribua à sub-rede um bloco de endereço de Roteamento entre Domínios sem Classificação (CIDR) que esteja dentro do intervalo de endereços da VPC, mas que não substitua o intervalo de endereços de qualquer outra sub-rede na VPC. Este é o motivo pelo qual você coletou as informações sobre a VPC e os blocos CIDR de sub-rede existentes:</span></p><ul><li><span>Bloco CIDR IPv4 da VPC do Café: </span><strong><span>10.200.0.0/20</span></strong></li><li><span>Bloco CIDR IPv4 da sub-rede pública 1 do Café: </span><strong><span>10.200.0.0/24</span></strong></li></ul><p><span>   Considere esses intervalos de endereços. Você consegue encontrar um bloco CIDR adequado para a sub-rede privada? Uma resposta possível seria usar o intervalo de endereços </span><strong><span>10.200.2.0/23</span></strong><span>.</span></p><ol start="38"><li><p><span>Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-subnet \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--vpc-id</span> &lt;CafeInstance VPC ID&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--cidr-block</span> <span class="cm-number">10</span>.200.2.0/23 \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--availability-zone</span> &lt;CafeInstance Availability Zone&gt;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeInstance VPC ID</span>&gt;</em><span> e </span><em>&lt;<span>CafeInstance Availability Zone</span>&gt;</em><span> pelos valores que você registrou anteriormente.</span></p></li><li><p><span>Depois que o comando for concluído, grave o </span><strong><span>SubnetId</span></strong><span> retornado como:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Cafe Private Subnet <span class="cm-number">1</span> ID: subnet-ssssssssss</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Crie a </span><strong><span>sub-rede privada do CafeDB 2</span></strong><span>. Esta é a sub-rede extra necessária para formar o grupo de sub-redes do banco de dados. É uma sub-rede privada vazia definida em uma zona de disponibilidade </span><em><span>diferente</span></em><span> da CafeInstance.</span></p></li></ol><p><span>   De forma semelhante ao que você fez na etapa anterior, atribua um bloco de endereços CIDR à sub-rede que esteja dentro do intervalo de endereços da VPC, mas que não substitua o intervalo de endereços de qualquer outra sub-rede da VPC. Até agora, você usou estes intervalos de endereço:</span></p><ul><li><span>Bloco CIDR IPv4 da VPC do Café: </span><strong><span>10.200.0.0/20</span></strong></li><li><span>Bloco CIDR IPv4 da sub-rede pública 1 do Café: </span><strong><span>10.200.0.0/24</span></strong></li><li><span>Bloco CIDR IPv4 da Sub-rede privada 1 do Café: </span><strong><span>10.200.2.0/23</span></strong></li></ul><p><span>   Como sugestão, use o intervalo de endereços </span><strong><span>10.200.10.0/23</span></strong><span> para essa segunda sub-rede privada.</span></p><p><span>   Além disso, lembre-se de uma etapa anterior da lista de zonas de disponibilidade disponíveis na região. Você determinou que o CafeDB está na primeira zona de disponibilidade (por exemplo, se a região for us-west-2, estará em us-west-2a). Portanto, escolha qualquer outra zona de disponibilidade (mas não a que termina com a) para a zona de disponibilidade da segunda sub-rede.</span></p><ol start="41"><li><p><span>Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-subnet \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--vpc-id</span> &lt;CafeInstance VPC ID&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--cidr-block</span> <span class="cm-number">10</span>.200.10.0/23 \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--availability-zone</span> &lt;availability-zone&gt;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeInstance VPC ID</span>&gt;</em><span> pelo valor que você gravou anteriormente. Além disso, substitua </span><em>&lt;<span>availability-zone</span></em>&gt;<span> pela zona de disponibilidade real.</span></p></li><li><p><span>Depois que o comando for concluído, grave o </span><strong><span>SubnetId</span></strong><span> retornado como:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Cafe Private Subnet <span class="cm-number">2</span> ID: subnet-tttttttttt</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Crie o </span><strong><span>grupo de sub-rede CafeDB</span></strong><span>. O grupo de sub-redes de banco de dados (DB) é uma coleção de sub-redes em uma VPC. Ao criar uma instância do Amazon RDS, você especifica a VPC em que a instância do RDS reside, associando a instância a um grupo de sub-redes de banco de dados.</span></p></li></ol><p><span>   Para a instância do RDS do Café, o grupo de sub-redes de banco de dados consiste nas duas sub-redes privadas que você criou nas etapas anteriores, </span><strong><span>sub-rede privada 1 do Café</span></strong><span> e </span><strong><span>sub-rede privada 2 do Café</span></strong><span>.</span></p><ol start="44"><li><p><span>Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws rds create-db-subnet-group \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--db-subnet-group-name</span> <span class="cm-string">"CafeDB Subnet Group"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--db-subnet-group-description</span> <span class="cm-string">"DB subnet group for Cafe"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--subnet-ids</span> &lt;Cafe Private Subnet <span class="cm-number">1</span> ID&gt; &lt;Cafe Private Subnet <span class="cm-number">2</span> ID&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--tags</span> <span class="cm-string">"Key=Name,Value= CafeDatabaseSubnetGroup"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>Cafe Private Subnet 1 ID</span>&gt;</em><span> e </span><em>&lt;<span>Cafe Private Subnet 2 ID</span>&gt;</em><span> pelos valores que você gravou anteriormente. Observe que existe um </span><em><span>espaço</span></em><span> entre os IDs de sub-rede.</span></p><p><span>Depois que o comando for concluído, ele retornará os atributos do grupo de sub-redes de banco de dados.</span></p></li></ol><p>&nbsp;</p><h3 id="tarefa-14-criar-a-instância-mariadb-do-amazon-rds"><span>Tarefa 1.4: Criar a instância MariaDB do Amazon RDS</span></h3><p><span>Agora você pode criar a </span><strong><span>CafeDBInstance</span></strong><span> que é mostrada no </span><a href="https://labs.vocareum.com/web/1926952/736065.0/ASNLIB/public/docs/lang/pt-br/README.html#after-migration-topology-diagram"><span>diagrama da topologia após a migração</span></a><span>. Usando a CLI da AWS, crie uma instância MariaDB do Amazon RDS com as seguintes definições de configuração:</span></p><ul><li><span>DB instance identifier (Identificador de instância de banco de dados): </span><strong><span>CafeDBInstance</span></strong></li><li><span>Engine option (Opção de mecanismo): </span><strong><span>MariaDB</span></strong></li><li><span>DB engine version (Versão do mecanismo de banco de dados): </span><strong><span>10.5.13</span></strong></li><li><span>DB Instance class (Classe da instância): </span><strong><span>db.t3.micro</span></strong></li><li><span>Allocated storage (Armazenamento alocado): </span><strong><span>20 GB</span></strong></li><li><span>Availability Zone (Zona de disponibilidade): </span><strong><span>Zona de disponibilidade do CafeInstance</span></strong></li><li><span>DB Subnet group (Grupo de sub-rede DB): </span><strong><span>Grupo de sub-rede do CafeDB</span></strong></li><li><span>VPC security groups (Grupos de segurança da VPC): </span><strong><span>CafeDataBaseSG</span></strong></li><li><span>Public accessibility (Acessibilidade pública): </span><strong><span>Não</span></strong></li><li><span>Username (Nome de usuário): </span><strong><span>root</span></strong></li><li><span>Master password (Senha principal): </span><strong><span>Re:Start!9</span></strong></li></ul><p><span>Essas opções especificam a criação de uma instância de banco de dados MariaDB implantada na mesma zona de disponibilidade da instância do Cafe. Ela também usa o grupo de sub-rede de banco de dados criado na etapa anterior.</span></p><p><strong><span>Dica:</span></strong><span> use a </span><a href="https://docs.aws.amazon.com/cli/latest/reference/rds/" target="_blank"><span>documentação da AWS CLI para RDS</span></a><span> para ajudar a determinar a sintaxe correta dos comandos da AWS CLI que você deverá usar nesta tarefa.</span></p><ol start="45"><li><p><span>Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws rds create-db-instance \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--db-instance-identifier</span> CafeDBInstance \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--engine</span> mariadb \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--engine-version</span> <span class="cm-number">10</span>.5.13 \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--db-instance-class</span> db.t3.micro \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--allocated-storage</span> <span class="cm-number">20</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--availability-zone</span> &lt;CafeInstance Availability Zone&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--db-subnet-group-name</span> <span class="cm-string">"CafeDB Subnet Group"</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--vpc-security-group-ids</span> &lt;CafeDatabaseSG Group ID&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--no-publicly-accessible</span> \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--master-username</span> root <span class="cm-attribute">--master-user-password</span> <span class="cm-string">'Re:Start!9'</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 246px;"></div><div class="CodeMirror-gutters" style="display: none; height: 246px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>CafeInstance Availability Zone</span>&gt;</em><span> e </span><em>&lt;<span>CafeDatabaseSG Group ID</span>&gt;</em><span> pelos valores que você anotou anteriormente.</span></p><p><span>Embora o comando retorne algumas informações sobre o banco de dados imediatamente, a instância de banco de dados pode levar até dez minutos para se tornar disponível.</span></p></li><li><p><span>Monitore o status da instância de banco de dados e aguarde até que ele mostre o valor </span><em><span>avaiable</span></em><span> (disponível). Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws rds describe-db-instances \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--db-instance-identifier</span> CafeDBInstance \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--query</span> <span class="cm-string">"DBInstances[*].[Endpoint.Address,AvailabilityZone,PreferredBackupWindow,BackupRetentionPeriod,DBInstanceStatus]"</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p><span>Esse comando exibe o </span><em><span>status</span></em><span> da instância de banco de dados como o último valor retornado.  Ele também mostra os seguintes valores do banco de dados:</span></p><ul><li><em><span>Endereço do endpoint</span></em></li><li><em><span>Zona de disponibilidade</span></em></li><li><em><span>Janela de backup preferencial</span></em></li><li><em><span>Período de retenção de backup</span></em></li></ul><p><span>Os backups automatizados ocorrem diariamente durante a janela de backup preferencial e são retidos pela duração especificada pelo período de retenção de backup. Observe o valor </span><strong><span>1</span></strong><span> para o </span><strong><span>período de retenção de backup</span></strong><span>, que indica que, por padrão, os backups diários são retidos por apenas 1 dia. Além disso, a </span><strong><span>janela de backup preferencial</span></strong><span> é definida com um intervalo de </span><strong><span>30 minutos</span></strong><span> por padrão. Você pode modificar essas configurações para corresponder à política de backup desejada.</span></p><p><span>O atributo de status mostrará inicialmente um valor </span><em><span>creating</span></em><span> (criando) e depois mudará para </span><em><span>modifying</span></em><span> (modificando).  Aguarde alguns momentos e repita o comando novamente. O status mudará progressivamente para </span><em><span>backing-up</span></em><span> (fazendo backup) e finalmente para </span><em><span>available</span></em><span> (disponível).</span></p></li><li><p><span>Continue repetindo o comando até que o status mostre </span><em><span>available</span></em><span> (disponível) e, em seguida, anote o valor retornado para </span><strong><span>Endpoint Address</span></strong><span> (Endereço de endpoint) usando o seguinte formato:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">RDS Instance Database Endpoint Address: Cafedb.xxxxxxx.us-west-2.rds.amazonaws.com</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre></li></ol><p>&nbsp;</p><h2 id="tarefa-2-migrar-dados-de-aplicações-para-a-instância-do-amazon-rds"><span>Tarefa 2: Migrar dados de aplicações para a instância do Amazon RDS</span></h2><p><span>Nesta tarefa, você migrará os dados do banco de dados local existente para o banco de dados recém-criado do Amazon RDS. Especificamente, você:</span></p><p><span>a) Abrirá uma sessão SSH para o CafeInstance.</span></p><p><span>b) Usará o utilitário </span><em><span>mysqldump</span></em><span> para criar um backup do banco de dados local.</span></p><p><span>c) Restaurará o backup para o banco de dados do Amazon RDS.</span></p><p><span>d) Testará a migração de dados.</span></p><p><span>Observe que você executará estas etapas na linha de comando de uma sessão SSH conectada ao </span><strong><span>CafeInstance</span></strong><span>. Essa instância pode se comunicar com êxito com a instância do Amazon RDS usando o protocolo do </span><em><span>MySQL</span></em><span> porque você associou o grupo de segurança </span><em><span>CafeDatabaseSG</span></em><span> à instância do RDS.</span></p><ol start="48"><li><span>Comece abrindo uma sessão SSH no </span><em><span>CafeInstance</span></em><span> e fazendo login como </span><em><span>ec2-user</span></em><span>. Siga as mesmas instruções que você usou na Tarefa 1.1, mas certifique-se de usar o </span><strong><span>endereço IP público do CafeInstance</span></strong><span>, que você gravou em uma etapa anterior:</span></li></ol><ul><li><span>Endereço IP público do CafeInstance: </span><strong><span>nnn.nnn.nnn.nnn</span></strong></li></ul><ol start="49"><li><p><span>Use o utilitário </span><em><span>mysqldump</span></em><span> para criar um backup do banco de dados local </span><strong><span>cafe_db</span></strong><span>. Este programa utilitário faz parte do produto de banco de dados MySQL e está disponível para você usar. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysqldump <span class="cm-attribute">--user</span><span class="cm-operator">=</span>root <span class="cm-attribute">--password</span><span class="cm-operator">=</span><span class="cm-string">'Re:Start!9'</span> \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--databases</span> cafe_db <span class="cm-attribute">--add-drop-database</span> &gt; cafedb-backup.sql</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>Esse comando gera instruções de linguagem de consulta estruturada (SQL) em um arquivo chamado </span><em><span>cafedb-backup.sql</span></em><span>, que podem ser executadas para reproduzir o esquema e os dados do banco de dados </span><em><span>cafe_db</span></em><span> original.</span></p></li><li><p><span>Revise o conteúdo do arquivo de backup. Abra o arquivo </span><strong><span>cafedb-backup.sql</span></strong><span> no seu editor de texto preferido. Como alternativa, se você quiser visualizá-lo usando o comando </span><code>less</code><span> do Linux, na janela SSH, digite:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">less cafedb-backup.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>Dica: </span></strong><span> Quando você usar o comando </span><code>less</code><span>, use as teclas de seta para cima e para baixo para mover uma linha para cima ou uma linha para baixo, respectivamente. Você também pode usar as teclas PAGE UP e PAGE DOWN para navegar por uma página para cima ou para baixo, respectivamente. Para sair do comando, digite </span><code>q</code><span>.</span></p><p><span>Observe os vários comandos SQL para criar o banco de dados, criar tabelas e índices e preencher o banco de dados com os dados originais.</span></p></li><li><p><span>Em seguida, restaure o backup para o banco de dados do Amazon RDS usando o comando </span><code>mysql</code><span>. Especifique o </span><em><span>endereço do endpoint da instância do RDS</span></em><span> no comando. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">--user</span><span class="cm-operator">=</span>root <span class="cm-attribute">--password</span><span class="cm-operator">=</span><span class="cm-string">'Re:Start!9'</span> \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--host</span><span class="cm-operator">=</span>&lt;RDS Instance Database Endpoint Address&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt; cafedb-backup.sql</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>RDS Instance Database Endpoint Address</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p><p><span>Esse comando cria uma conexão </span><em><span>mysql</span></em><span> com a instância do RDS e executa as instruções SQL no arquivo </span><em><span>cafedb-backup.sql</span></em><span>.</span></p></li><li><p><span>Por último, verifique se </span><em><span>cafe_db</span></em><span> foi criado e preenchido com êxito na instância do Amazon RDS. Abra uma sessão interativa </span><em><span>mysql</span></em><span> na instância e recupere os dados na tabela de </span><strong><span>produtos</span></strong><span> do banco de dados </span><em><span>cafe_db</span></em><span>. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">--user</span><span class="cm-operator">=</span>root <span class="cm-attribute">--password</span><span class="cm-operator">=</span><span class="cm-string">'Re:Start!9'</span> \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--host</span><span class="cm-operator">=</span>&lt;RDS Instance Database Endpoint Address&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mom_pop_db</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>RDS Instance Database Endpoint Address</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p></li><li><p><span>Em seguida, insira a instrução SQL para recuperar os dados na tabela de </span><strong><span>produtos</span></strong><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">select * from product;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>A consulta deve retornar 9 linhas da tabela.</span></p></li><li><p><span>Agora você pode sair da sessão SQL interativa. Na janela SSH, insira:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Deixe a janela SSH de CafeInstance aberta para uso posterior.</span></p></li></ol><p>&nbsp;</p><h2 id="tarefa-3-configurar-o-site-para-usar-a-instância-do-amazon-rds"><span>Tarefa 3: Configurar o site para usar a instância do Amazon RDS</span></h2><p><span>Agora você está pronto para configurar o site do Café para usar a instância do Amazon RDS. Esta etapa é simples porque o designer da aplicação seguiu as práticas recomendadas e externalizou as informações de conexão do banco de dados como parâmetros no repositório de parâmetros do AWS Systems Manager. Nesta tarefa, você altera o parâmetro </span><em><span>URL do banco de dados</span></em><span> da aplicação do Café para apontar para o </span><em><span>endereço do endpoint da instância do RDS</span></em><span>.</span></p><ol start="55"><li><span>Na guia do navegador do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, selecione </span><strong><span>Services &gt; Systems Manager</span></strong><span> (Serviços &gt; Systems Manager).</span></li><li><span>No painel de navegação esquerdo, clique em </span><strong><span>Parameter Store</span></strong><span> (Repositório de parâmetros).</span></li><li><span>Na lista </span><strong><span>Parameters</span></strong><span> (Parâmetros), clique em </span><strong><span>/cafe/dbUrl</span></strong><span>. O valor atual do parâmetro é exibido, com sua descrição e outras informações de metadados.</span></li><li><span>Clique em </span><strong><span>Edit</span></strong><span> (Editar).</span></li><li><span>Na página </span><strong><span>Parameter details</span></strong><span> (Detalhes de parâmetros), substitua o texto da caixa </span><strong><span>Value</span></strong><span> (Valor) pelo valor do </span><strong><span>Endereço de endpoint do banco de dados da instância do RDS</span></strong><span> que você registrou anteriormente.</span></li><li><span>Clique em&nbsp;</span><strong><span>Save changes</span></strong><span> (Salvar alterações).</span></li></ol><p><span>   O parâmetro </span><em><span>dbUrl</span></em><span> agora faz referência à instância do banco de dados do Amazon RDS em vez do banco de dados local.</span></p><ol start="61"><li><p><span>Teste o site para confirmar se ele consegue acessar o novo banco de dados corretamente. Em uma janela do navegador, insira a seguinte URL:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://&lt;CafeInstance Public DNS Name&gt;/cafe</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Substitua </span><em>&lt;<span>CafeInstance Public DNS Name</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p></li><li><p><span>A página inicial do site deve ser carregada corretamente. Selecione a guia </span><strong><span>Order History</span></strong><span> (Histórico de pedidos) e observe o número de pedidos no banco de dados. Compare esse número com o </span><strong><span>Número de pedidos</span></strong><span> que você anotou antes da migração do banco de dados. Ambos os números devem corresponder.</span></p></li><li><p><span>Sinta-se livre para fazer alguns novos pedidos e verificar o bom funcionamento do site. </span><strong><span>Feche</span></strong><span> a guia do navegador quando terminar.</span></p></li></ol><p>&nbsp;</p><h2 id="tarefa-4-monitorar-o-banco-de-dados-do-amazon-rds"><span>Tarefa 4: Monitorar o banco de dados do Amazon RDS</span></h2><p><span>Um dos benefícios do uso do Amazon RDS é a capacidade de monitorar o desempenho de uma instância de banco de dados. O Amazon RDS envia automaticamente métricas para o Amazon CloudWatch a cada minuto para cada banco de dados ativo. Nesta tarefa, você identifica algumas dessas métricas de desempenho e aprende a monitorar uma métrica no console do Amazon RDS.</span></p><ol start="64"><li><span>Na guia do navegador do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, selecione </span><strong><span>Services &gt; RDS</span></strong><span> (Serviços &gt; RDS).</span></li><li><span>No painel de navegação esquerdo, clique em </span><strong><span>Databases</span></strong><span> (Bancos de dados).</span></li><li><span>Na lista </span><strong><span>Databases</span></strong><span> (Bancos de dados), clique em </span><strong><span>Cafedbinstance</span></strong><span>. Informações detalhadas sobre o banco de dados são exibidas.</span></li><li><span>Clique na guia </span><strong><span>Monitoring</span></strong><span> (Monitoramento). Por padrão, essa guia exibe várias métricas importantes da instância de banco de dados disponíveis no Amazon CloudWatch. Cada métrica inclui um gráfico que mostra a métrica à medida que ela é monitorada em um intervalo de tempo específico.</span></li></ol><p><span>   A lista de métricas exibidas incluirá o seguinte:</span></p><ul><li><strong><span>CPU Utilization</span></strong><span> (Utilização da CPU): percentagem de utilização da CPU</span></li><li><strong><span>DB Connections</span></strong><span> (Conexões de banco de dados): número de conexões de banco de dados em uso.</span></li><li><strong><span>Free Storage Space</span></strong><span> (Espaço de armazenamento livre): a quantidade de espaço de armazenamento disponível</span></li><li><strong><span>Write IOPS</span></strong><span> (IOPS de gravação): número médio de operações de E/S de gravação de disco por segundo</span></li><li><strong><span>Read IOPS</span></strong><span> (IOPS de leitura): número médio de operações de E/S de leitura de disco por segundo</span></li><li><strong><span>Read Throughput</span></strong><span> (Taxa de transferência de leitura): número médio de bytes lidos do disco por segundo</span></li><li><strong><span>Write Throughput</span></strong><span> (Taxa de transferência de gravação): número médio de bytes gravados no disco por segundo</span></li></ul><p><span>   </span><strong><span>Dica:</span></strong><span> algumas das métricas listadas acima podem aparecer na segunda ou terceira página de gráficos. Clique em </span><code>2</code><span> ou </span><code>3</code><span> à direita da caixa de pesquisa do CloudWatch para ver métricas adicionais.</span></p><ol start="68"><li><p><span>Monitore a métrica </span><strong><span>Conexões de banco de dados</span></strong><span> à medida que você cria uma conexão com o banco de dados do CafeInstance.</span></p><p><span>Abra uma sessão SQL interativa na instância </span><strong><span>cafe_db</span></strong><span> do RDS. Na janela SSH do </span><strong><span>CafeInstance</span></strong><span>, informe:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">--user</span><span class="cm-operator">=</span>root <span class="cm-attribute">--password</span><span class="cm-operator">=</span><span class="cm-string">'Re:Start!9'</span> \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--host</span><span class="cm-operator">=</span>&lt;RDS Instance Database Endpoint Address&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">cafe_db</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>No comando, substitua </span><em>&lt;<span>RDS Instance Database Endpoint Address</span>&gt;</em><span> pelo valor que você gravou anteriormente.</span></p></li><li><p><span>Insira uma instrução SQL para recuperar os dados na tabela de </span><strong><span>produtos</span></strong><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">select * from product;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>A consulta deve retornar 9 linhas da tabela.</span></p></li><li><p><span>No console do Amazon RDS, clique no gráfico </span><strong><span>Conexões de banco de dados</span></strong><span> para abri-lo em uma exibição maior. O gráfico mostra uma linha que indica que a conexão </span><strong><span>1</span></strong><span> está em uso. Essa conexão foi estabelecida pela sessão SQL interativa do CafeInstance.</span></p></li></ol><p><span>   </span><strong><span>Dica:</span></strong><span> se o gráfico não mostrar nenhuma conexão em uso, aguarde um minuto (que é o intervalo de amostragem) e clique em </span><strong><span>Refresh</span></strong><span> (Atualizar). Agora deve mostrar uma conexão aberta.</span></p><ol start="71"><li><p><span>Feche a conexão da sessão SQL interativa. Na janela SSH do </span><strong><span>CafeInstance</span></strong><span>, informe:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Aguarde um minuto e, em seguida, no gráfico </span><strong><span>DB Connections</span></strong><span> (Conexões de banco de dados) no console do Amazon RDS, clique em </span><strong><span>Refresh</span></strong><span> (Atualizar). O gráfico agora mostra que o número de conexões em uso é </span><strong><span>0</span></strong><span>.</span></p></li></ol><p><span>   Sinta-se livre para explorar os outros gráficos. Para obter mais informações sobre a definição de cada métrica, consulte o capítulo </span><em><span>Monitoramento com o Amazon CloudWatch</span></em><span> da </span><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html#monitoring-cloudwatch" target="_blank"><span>documentação do Amazon RDS</span></a><span>.</span></p><p><span>Ótimo trabalho! Você migrou com êxito a plicação do Café para usar um banco de dados do Amazon RDS e explorou os recursos de monitoramento do Amazon RDS.</span></p><p>&nbsp;</p><p><strong><span>Atualização do Café</span></strong></p><p><img src="./Coffee-Shop.png" alt="cena do café" width="400"></p><p><span>Todos no Café estão felizes com o impacto da migração do banco de dados. Nikhil e Sofia agora têm mais tempo livre para eles mesmos nos fins de semana, enquanto Martha e Frank estão economizando dinheiro em seus custos trabalhistas como resultado.</span></p><p>&nbsp;</p><h2 id="atividade-concluída"><span>Atividade concluída</span></h2><p><i class="icon-flag-checkered"></i><span> Parabéns! Você concluiu a atividade.</span></p><ol start="73"><li><span>Clique em </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Encerrar laboratório) na parte superior desta página e, em seguida, clique em </span><span id="ssb_blue"><span>Yes</span></span><span> (Sim) para confirmar que deseja encerrar a atividade.</span></li></ol><p><span>   Um painel será exibido com a mensagem: "A EXCLUSÃO foi iniciada... You may close this message box now." (a EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora).</span></p><ol start="74"><li><span>Clique no </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></li></ol><p>&nbsp;</p><h2 id="recursos-adicionais"><span>Recursos adicionais</span></h2><p><span>Para obter mais informações sobre o treinamento e a certificação da AWS, consulte </span><a href="https://aws.amazon.com/training/" target="_blank" class="url">https://aws.amazon.com/training/</a><span>.</span>
+<span>​</span>
+<em><span>O seu feedback é sempre bem-vindo.</span></em>
+<span>Se você quiser compartilhar sugestões ou correções, forneça os detalhes em nosso </span><a href="https://support.aws.amazon.com/#/contacts/aws-training"><span>Formulário de contato do AWS Training and Certification</span></a><span>.</span>
+<span>​</span>
+<em><span>© 2022 Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este material não pode ser reproduzido ou redistribuído, no todo ou em parte, sem a permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+<script defer="" src="./v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7100dd466e07a694&quot;,&quot;token&quot;:&quot;a73834a4a1444e9ab89e8da06da41720&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>
