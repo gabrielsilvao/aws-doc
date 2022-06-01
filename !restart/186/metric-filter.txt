@@ -1,1 +1,0 @@
-[ip, id, user, timestamp, request, status_code=404, size]
